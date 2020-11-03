@@ -39,4 +39,4 @@ if __name__ == '__main__':
             break
         except ValueError as e:
             print("Opps: Something went wrong!!\nLet's try this again...\n\n")
-    print("\n\nYou are Password is: \n{}".format(ThePassword))
+    print("\n\nThe Password is: \n{}".format(ThePassword))
