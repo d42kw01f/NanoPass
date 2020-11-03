@@ -29,8 +29,11 @@ class CreatPasswords:
 if __name__ == '__main__':
     while True:
         try:
-            TheLen = int(input("Enter the length: "))
-            UserOption = int(input("Enter the options: "))
+            TheLen = int(input("Enter the length of the password: "))
+            print("\n\n1. Advanced Security Password")
+            print("2. Medium Security Password")
+            print("3. Low Security Password")
+            UserOption = int(input("Enter the your options: "))
             The_Pass = CreatPasswords(TheLen, UserOption)
             ThePassword = CreatPasswords.TheMainOne(The_Pass)
             break
