@@ -21,7 +21,7 @@ class CreatPasswords:
             raise ValueError('Wrong Input...')
         TheConstant = list(TheConstant)
         random.shuffle(TheConstant)
-        random_password = random.choices(TheConstant,  k=self.length)
+        random_password = random.sample(TheConstant,  k=self.length)
         TheRandPassword = ''.join(random_password)
         return TheRandPassword
 
@@ -39,4 +39,4 @@ if __name__ == '__main__':
             break
         except ValueError as e:
             print("Opps: Something went wrong!!\nLet's try this again...\n\n")
-    print("You are Password is: \n{}".format(ThePassword))
+    print("\n\nYou are Password is: \n{}".format(ThePassword))
